@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\tacint_shark\weapons\tudspecial\Grip"
+	"$bumpmap" "models\tacint_shark\weapons\tudspecial\Grip norm"	
+     	"$phong" "1"
+      "$phongboost" "1"
+      "$phongfresnelranges" "[2 4 6]"     	
+      
+	
