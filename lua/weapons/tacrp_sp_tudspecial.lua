@@ -11,7 +11,7 @@ SWEP.Category = "Tactical RP (Bonus)"
 SWEP.SubCatTier = "0Exotic"
 SWEP.SubCatType = "3Machine Pistol"
 
-SWEP.Description = "Desert Eagle in a mock-carbine configuration and given the unholy power of fully-automatic fire."
+SWEP.Description = "Gold-plated Desert Eagle in a mock-carbine configuration and given the unholy power of fully-automatic fire."
 SWEP.Description_Quote = "\"This is this and that is that.\""
 
 SWEP.Trivia_Caliber = ".50 Action Express"
@@ -32,58 +32,57 @@ SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
+        Damage_Max = 60,
+        Damage_Min = 30,
+
+        HipFireSpreadPenalty = 0.03,
+        RecoilKick = 15,
+        ReloadTimeMult = 1.25,
+        ShootingSpeedMult = 0.3,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 12,
-        Damage_Min = 7,
+        Damage_Max = 45,
+        Damage_Min = 25,
 
-        Range_Min = 1000,
-        Range_Max = 2000,
+        Range_Min = 200,
+        Range_Max = 1500,
 
-        RPM = 750,
+        HipFireSpreadPenalty = 0.04,
+        RecoilKick = 15,
+        ReloadTimeMult = 1.25,
+        ShootingSpeedMult = 0.3,
 
         BodyDamageMultipliers = {
-            [HITGROUP_HEAD] = 2,
+            [HITGROUP_HEAD] = 2.5,
             [HITGROUP_CHEST] = 1,
             [HITGROUP_STOMACH] = 1,
             [HITGROUP_LEFTARM] = 1,
             [HITGROUP_RIGHTARM] = 1,
-            [HITGROUP_LEFTLEG] = 0.75,
-            [HITGROUP_RIGHTLEG] = 0.75,
+            [HITGROUP_LEFTLEG] = 0.9,
+            [HITGROUP_RIGHTLEG] = 0.9,
             [HITGROUP_GEAR] = 0.9
-        },
-    },
-    [TacRP.BALANCE_PVE] = {
-        Damage_Max = 10,
-        Damage_Min = 5,
-        RPM = 800,
-
-        RecoilSpreadPenalty = 0.003,
-    },
-    [TacRP.BALANCE_OLDSCHOOL] = {
-        RecoilMaximum = 20,
-        RecoilSpreadPenalty = 0.0035
+        }
     }
 }
 
-SWEP.TTTReplace = TacRP.TTTReplacePreset.SMG
+SWEP.TTTReplace = TacRP.TTTReplacePreset.Magnum
 
 // "ballistics"
 
-SWEP.Damage_Max = 36
-SWEP.Damage_Min = 19
-SWEP.Range_Min = 800 // distance for which to maintain maximum damage
-SWEP.Range_Max = 3500 // distance at which we drop to minimum damage
+SWEP.Damage_Max = 75
+SWEP.Damage_Min = 32
+SWEP.Range_Min = 500 // distance for which to maintain maximum damage
+SWEP.Range_Max = 4000 // distance at which we drop to minimum damage
 SWEP.Penetration = 10 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.85
 SWEP.ArmorBonus = 2
 
-SWEP.MuzzleVelocity = 23500
+SWEP.MuzzleVelocity = 12500
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 3.5,
-    [HITGROUP_CHEST] = 1.5,
-    [HITGROUP_STOMACH] = 1.25,
+    [HITGROUP_HEAD] = 2.5,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.9,
@@ -99,39 +98,42 @@ SWEP.Firemodes = {
 }
 
 SWEP.RPM = 600
+SWEP.RPMMultSemi = 0.6
 
 SWEP.Spread = 0.006
 
 SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 11
+SWEP.RecoilMaximum = 6
 SWEP.RecoilResetTime = 0
-SWEP.RecoilDissipationRate = 33
-SWEP.RecoilFirstShotMult = 1.5
+SWEP.RecoilDissipationRate = 12
+SWEP.RecoilFirstShotMult = 0.6667
 
 SWEP.RecoilVisualKick = 3
-SWEP.RecoilKick = 8
-SWEP.RecoilStability = 0.5
+SWEP.RecoilKick = 10
+SWEP.RecoilStability = 0.25
+SWEP.RecoilAltMultiplier = 500
 
-SWEP.RecoilSpreadPenalty = 0.005
+SWEP.RecoilSpreadPenalty = 0.015
+SWEP.HipFireSpreadPenalty = 0.022
 
 SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.975
-SWEP.ShootingSpeedMult = 0.8
+SWEP.MoveSpeedMult = 0.925
+SWEP.ShootingSpeedMult = 0.5
 SWEP.SightedSpeedMult = 0.75
 
 SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.3
-SWEP.SprintToFireTime = 0.28
+SWEP.AimDownSightsTime = 0.28
+SWEP.SprintToFireTime = 0.35
 
-SWEP.Sway = 0.75
-SWEP.ScopedSway = 0.25
+SWEP.Sway = 1
+SWEP.ScopedSway = 0.3
 
-SWEP.FreeAimMaxAngle = 4
+SWEP.FreeAimMaxAngle = 5
 
 // hold types
 
@@ -166,7 +168,6 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 
 SWEP.ClipSize = 15
 SWEP.Ammo = "357"
-SWEP.Ammo_Expanded = "ti_pdw"
 
 SWEP.ReloadTimeMult = 1
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/mp7.mdl"
@@ -183,7 +184,7 @@ local path1 = "tacint_shark/tudspecial/"
 SWEP.Sound_Shoot = "^" .. path1 .. "deagle-1.wav"
 SWEP.Sound_Shoot_Silenced = path .. "fire_silenced-1.wav"
 
-SWEP.Vol_Shoot = 115
+SWEP.Vol_Shoot = 140
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 
 // effects
@@ -265,7 +266,7 @@ SWEP.Attachments = {
     },
     [4] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_foldstock2", "acc_sling", "acc_duffle", "acc_extmag_smg"},
+        Category = {"acc", "acc_sling", "acc_duffle", "acc_extmag_pistol"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },
@@ -289,7 +290,7 @@ SWEP.Attachments = {
     },
     [7] = {
         PrintName = "Ammo",
-        Category = {"ammo_rifle"},
+        Category = {"ammo_pistol"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     }
@@ -315,3 +316,16 @@ addsound("tacint_mp5.fire_select", {
     path_mp5 .. "fire_select-2.wav",
     path_mp5 .. "fire_select-3.wav",
 })
+
+if engine.ActiveGamemode() == "terrortown" then
+    SWEP.AutoSpawnable = false
+    SWEP.Kind = WEAPON_PISTOL
+    SWEP.CanBuy = { ROLE_TRAITOR, ROLE_DETECTIVE }
+    SWEP.EquipMenuData = {
+        type = "Weapon",
+        desc = "Automatic Desert Eagle carbine.\n\nBEWARE: May be visible while holstered!",
+    }
+
+    function SWEP:TTTBought(buyer)
+    end
+end
