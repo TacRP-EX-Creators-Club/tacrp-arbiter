@@ -214,6 +214,14 @@ SWEP.ProceduralIronFire = {
     vm_ang = Angle(0, 0.4, 0),
     t = 0.25,
     tmax = 0.25,
+	bones = {
+	    {
+            bone = "ValveBiped.bolt",
+            pos = Vector(0, 0, -2.5),
+            t0 = 0,
+            t1 = 0.1,
+        },
+	}
 }
 
 // attachments
