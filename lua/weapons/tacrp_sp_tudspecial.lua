@@ -26,7 +26,7 @@ Additional assets: kriboez, cR45h, Engys Epangelmatikes, Vitevius
 ]]
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_deagle_tudspecial.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_mp7.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_deagle_tudspecial.mdl"
 
 SWEP.Slot = 1
 
@@ -170,8 +170,8 @@ SWEP.ClipSize = 15
 SWEP.Ammo = "357"
 
 SWEP.ReloadTimeMult = 1
-SWEP.DropMagazineModel = "models/weapons/tacint/magazines/mp7.mdl"
-SWEP.DropMagazineImpact = "plastic"
+SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/deagle_tudspecial.mdl"
+SWEP.DropMagazineImpact = "pistol"
 
 SWEP.ReloadUpInTime = 1.2
 SWEP.DropMagazineTime = 0.4
@@ -244,7 +244,7 @@ SWEP.Attachments = {
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
         Pos_VM = Vector(-4.2, 0, 8),
-        Pos_WM = Vector(4, 1.5, -6),
+        Pos_WM = Vector(15, 2.2, -6),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -3.5, 180),
     },
@@ -268,9 +268,9 @@ SWEP.Attachments = {
         DetachSound = "tacrp/weapons/flashlight_off.wav",
         InstalledElements = {"rail"},
         Pos_VM = Vector(-3, -0.8, 12),
-        Pos_WM = Vector(10, 1.3, -4),
+        Pos_WM = Vector(18, 3, -4.5),
         Ang_VM = Angle(90, 0, -90),
-        Ang_WM = Angle(0, -3.5, -90),
+        Ang_WM = Angle(0, -3.5, 90),
     },
     [4] = {
         PrintName = "Accessory",
